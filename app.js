@@ -5,14 +5,15 @@ const http = require('http');
 const path = require('path');
 const cors = require('cors');
 const port = 5000;
+//carga diferida
+
 
 const app = express();
-
 //Instancia del server
 const server = http.createServer(app);
 
 //configuracion de archivos static
-app.use(express.static(__dirname+'/static'));
+app.use(express.static(__dirname+'/public'));
 
 //configuracion de motor de plantillas
 app.set('view engine','ejs');
