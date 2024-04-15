@@ -1,0 +1,90 @@
+.acceder{
+	position:relative;
+	height:7px;
+	line-height:5px;
+	margin-top:1rem;
+	border-radius:15px;
+	transition:all 1s;
+	border:none;
+	font-weight:bold;
+	font-family:'calibri';
+}
+#volver{
+	position:relative;
+	border:none;
+	text-decoration: none;
+	color:black;
+	background:rgb(240, 240, 240);
+	padding:.5rem 2rem .5rem 2rem;
+	top:-1.7px;
+	height:2.6rem;
+	width:24%;
+	line-height:1.2rem;
+	font-weight:bold;
+	font-family:'calibri';
+}
+#volver:hover{
+    background:rgba(0,0,0,.1);
+    backdrop-filter:blur(3px);
+    box-shadow:2px 2px 50px rgb(255, 183, 67);
+    color:rgb(255, 183, 67);
+}
+.acceder:hover{
+    background:rgba(0,0,0,.1);
+    backdrop-filter:blur(3px);
+    box-shadow:2px 2px 50px rgb(255, 183, 67);
+    color:rgb(255, 183, 67);
+}
+.restablecer-registro{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: .1rem;
+	width:500px;
+}
+.restablecer-registro-interno{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.restablecer-registro .restablecer-registro-interno a{
+	text-decoration: none;
+	color:white;
+	transition:all 1s;
+}
+.restablecer-registro .restablecer-registro-interno a:hover{
+	color:rgb(255, 183, 67);
+
+}
+
+.botones{
+	position:relative;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+    margin:1rem auto;
+}
+.h11{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	width:500px;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.g-recaptcha{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+	margin-top:1rem;
+}
+#contactForm{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	margin-top:-40px;
+	width:500px;
+}
+

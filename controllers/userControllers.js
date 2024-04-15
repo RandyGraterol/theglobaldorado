@@ -1,24 +1,24 @@
  const index = (req,res)=>{
- res.render('index2');
+ res.render('index');
  }
 //////////////////////////////////////////////////
- const servirImagenes = async (req, res) => {
- const rutaImagenes ='C:\\Users\\zheta\\Desktop\\155$\\server\\utils\\static\\img';
-  try {
-    const { nombreImagen } = req.params;
-    const imagenComprimida = path.join(rutaImagenes, '/comprimidas/', nombreImagen);
 
-    if (fs.existsSync(imagenComprimida)) {
-      res.sendFile(imagenComprimida);
-    } else {
-      res.status(404).send('Imagen no encontrada');
-    }
-  } catch (error) {
-    res.status(500).send('Error al servir la imagen');
-  }
-};
+const loginGet = (req,res)=>{
+ res.render('login');
+}
+
+/////////////////////////////////////////////////
+const registerGet = (req,res)=>{
+res.render('register');
+}
+////////////////////////////////////////////////
+const main = (req,res)=>{
+res.render('main.ejs');
+}
 ////////////////////////////////////////////////
  module.exports={
- 	index,
-    servirImagenes
+  index,
+  loginGet,
+  registerGet,
+  main
  }

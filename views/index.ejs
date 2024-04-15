@@ -1,106 +1,285 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TheGlobalDorado</title>
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
-  <link rel="icon" type="image/x-icon" href="/icon/logo.png" />
-</head>
+<%-include('header')-%>
 <body>
-  <!---------------------------------------------------->
-  <nav>
+  <div style='overflow-x:hidden;'>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <img src="/template/icon/corona.png" alt="">
+            <span>
+              GlobalDorado
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img width='30' src='/icon/menu.png'></img>
+          </button>
 
-    <div class='div-Nav'>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html">servicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pet.html">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login">Acceder</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/main">Principal</a>
+                </li>
+              </ul>
+            </div>
+            
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section position-relative" id='slider_section'>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row" >
+                <h1 id='title' class='fst-italic'>
+                </h1>
+                <div class="col-md-4 offset-md-2 botsito2">
+                  <div class="slider_detail-box">
+                    
+                    <p>
+                      Estamos encantados de tenerte aquí y ser tu compañero en tu viaje de aprendizaje y entretenimiento en línea. Queremos invitarte a que explores todos los increíbles recursos que tenemos para ti.
+                    </p>
+                    <div class="botsito">
+                      <a href="/login" class="btn-1">
+                        Acceder
+                      </a>
+                      <a href="/register" class="btn-2">
+                        Registrate
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="roww">
+                    <h1 class='title'>
+                      Entretenimiento
+                    </h1>
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                    </p>
+                    <div class="botsito">
+                      <a href="" class="btn-1" id='btn-02'>
+                        ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="roww">
+                    <h1 class='title'>
+                     Cursos
+                    </h1>
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                    </p>
+                    <div class="botsito">
+                      <a href="" class="btn-1" id='btn-03'>
+                        Ver mas
+                      </a>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="roww">
+                    <h1 class='title'>
+                      Libros
+                    </h1>
+                <div class="col-md-4 offset-md-2">
+                  <div class="slider_detail-box">
+                    <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry.
+                      Lorem Ipsum has been the industry's standard dummy text ever
+                    </p>
+                    <div class="botsito">
+                      <a href="" class="btn-1" id='btn-04'>
+                        Ver mas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <img style='width:70px;border-radius:50px;height:70px' src='/icon/logo.jpeg'>
-
-      <div class='div-nav-anidado'>
-       <button title='Iniciar' class='bNav' onclick='returr()'>Log in</button>
-       <button title='Registrarse' class='bNav' onclick='returr()'>Sign up</button>
-     </div>
-
-   </div>
-
- </nav>
- <!---------------------------------------------------->
- <header>
-  <div>
-    <p id='title'><!--texto insertado dinamicamente con js--></p>
+    </section>
+    <!-- end slider section -->
   </div>
-  <form class='form-1'>
-    <input type="text" name="buscar" placeholder="Buscar">
-    <button id='submit'>Submit</button>
-  </form>
-</header>
-<!------------------------------------------------------->
-<main>
 
-  <div class="lines">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </div>
+  <!-- about section -->
 
-  <div class='icon'> 
-    <div>
-     <img src="/icon/peliculas.png">
-     <p>Peliculas</p>
-   </div>
-   <div>
-    <img src="/icon/cursos.png">
-    <p>Cursos</p>
-  </div>
-  <div>
-    <img src="/icon/streaming.png">
-    <p>Streaming</p>
-  </div>
-  <div>
-    <img src="/icon/libros.png">
-    <p>Libros</p>
-  </div>
+  <section class="about_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="/img/ejecutivos.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2 class="custom_heading">
+              Acerca de nuestra pagina web
+              <span style='color:rgb(255, 183, 67)'>
+                GlobalDorado
+              </span>
+            </h2>
+            <p>
+              GlobalDorado es una plataforma única que te ofrece una amplia gama de servicios de streaming para satisfacer tus necesidades de aprendizaje y entretenimiento. Ya sea que estés interesado en aprender programación, sumergirte en la lectura de libros fascinantes o disfrutar de películas de calidad, GlobalDorado tiene todo lo que necesitas en un solo lugar.
+            </p>
+            <div>
+              <a href="" class='btn-1' id="btn-1">
+                ver mas
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- service section -->
+  <section class="service_section layout_padding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-2">
+          <h2 class="custom_heading">
+            categorias <span style='color:rgb(255, 183, 67)'>Libros</span>
+          </h2>
+          <div class="container layout_padding2">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="img_box">
+                  <img src="/template/images/s-1.png" alt="">
+                </div>
+                <div class="detail_box">
+                  <h6>
+                    Libros de Medicina
+                  </h6>
+                  <p>
+                   Medicina salud y cuidado del sueño mediante lecturas diarias , donde crearas habitos para unos años largos de vida y salud 
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="img_box">
+                  <img src="/template/images/s-2.png" alt="">
+                </div>
+                <div class="detail_box">
+                  <h6>
+                    libros de flora y fauna
+                  </h6>
+                  <p>
+                    Libros donde podras encontrar mucha variedad de especies de plantas y animales
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="img_box">
+                  <img src="/template/images/s-3.png" alt="">
+                </div>
+                <div class="detail_box">
+                  <h6>
+                    Libros sobre salud
+                  </h6>
+                  <p>
+                    Libros de salud , estetica profesional cuidado de la salud , metodos de cuidado de la piel etc.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <a href="" id="btn-2">
+              Ver mas
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="/img/televisor.png" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </section>
 
-</main>
-<!-------------------------------------------------------------------->
-  <div class='perspectiva-container'>
-  <section class='perspectiva'>
-  
-   <div class='divPerspectiva'>
-    <h2 class='h2-section-1'>¿Como ganar dinero con lucas dalto?</h2>
-     
-   </div>
+  <!-- end service section -->
 
-   <div class='divPerspectiva'>
-    <h2 class='h2-section-1'>¡Aprende html desde cero!</h2>
-    
-   </div>
-
-</section>
-</div>
-<!--------------------------------------------------------------------->
- <div class='divPfrecuentes'>
- <h2 class='h2'>¡Preguntas Frecuentes!</h2>
- <div class='divSfrecuentes'>
- <section class='preguntasFrecuentesS'>
-  <h3 class='h3'>¡Que Ofrecemos!</h3>
-   <p>TheGlobalDorado es una página web que ofrece una amplia gama de contenido en streaming. Con un enfoque principal en cursos, libros, películas y más, esta plataforma tiene todo lo que necesitas para expandir tus conocimientos y entretenerte.</p>
- </section>
- <section class='preguntasFrecuentesS'>
-  <h3 class='h3'>¡Utilidad!</h3>
-   <p>TheGlobalDorado es una página web que ofrece una amplia gama de contenido en streaming, y su utilidad es indiscutible. Esta plataforma es una herramienta invaluable para aquellos que buscan expandir sus conocimientos y enriquecer su tiempo libre.</p>
- </section>
- <section class='preguntasFrecuentesS'>
-  <h3 class='h3'>¡Seguridad!</h3>
-   <p>En primer lugar, TheGlobalDorado cuenta con medidas de seguridad robustas para proteger la información personal y financiera de sus usuarios. Utilizan tecnología de encriptación avanzada para asegurar que tus datos estén protegidos durante las transacciones y el manejo de información sensible.</p>
- </section>
-</div>
-</div>
-
-<div class='carrusel-p'>
-
-  <h2 class='h22'>Entretenimiento</h2>
+ <!--Carrusel start-->
+  <div class='carrusel-p' id='carrusel-p'>
+  <h2 class='h22'>Entretenimiento & <span style='color:rgb(255, 183, 67)'>Diversión</span></h2>
 
    <div class='carrusel-list' id='carrusel-list'>
      
@@ -245,11 +424,257 @@
 
    </div>
    
-</div>
-<!---------------------------------------------------->
-<%- include('footer') -%>
-<script type="text/javascript" src='/js/perspectiva.js'></script>
-<script type="text/javascript" src='/js/carrusel.js'></script>
-<script type="text/javascript" src='../js/efectWrite.js'></script>
+</div>  
+
+  <!-- gallery section -->
+  <section class="gallery-section layout_padding">
+    <div class="container">
+      <h2 id='h22'>
+        Libros e <span style='color:rgb(255, 183, 67)'>Historias</span>
+      </h2>
+    </div>
+    <div class="container containerIsert">
+     <!---Insertando libros con JavaScript-->
+    </div>
+
+  </section>
+
+<section id='iframeSaber'>
+  
+  <div class='divIframe'>
+  <h2>¿QUIERES SABER <span>DE QUÉ TRATA?</span></h2>
+  </div>
+  <div class='textoSaber'>
+    <h2 style='text-align: center;'>¡TE <span>EXPLICO!</span></h2>
+   <p>Global Dorado es una plataforma que posee contenido de valor para ofrecer a sus usuarios una forma de educarse, entretenerse y al mismo tiempo la posibilidad de generar ganancias ofreciendo servicios STREAMING además todo esto desde la comodidad de tu casa y todo desde un mismo lugar.
+
+Gracias a su contenido educativo como cursos y libros de crecimiento personal, tiene como intensión llevar información de alto valor a todos sus usuarios.
+  </p> 
+  </div>
+  
+
+</section>
+
+  <!-- hexagono-->
+
+<section id='sectionLogos'> 
+  <div class='div-padre'>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  <div class='hexagon'></div>
+  </div>
+</section>
+
+
+  <section class="buy_section layout_padding">
+    <div class="container">
+      <h2>
+        <span style='color:rgb(255, 183, 67)'>Suscripciones</span>  y aportes
+      </h2>
+      <p>
+        Puedes seleccionar una gran variedad de suscripciones y hacer aportes de tus contenidos favoritos en GlobalDorado
+      </p>
+      <div class="d-flex justify-content-center">
+        <a href="" id="btn-3">
+          Suscribirse
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end buy section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding-bottom">
+    <div class="container">
+      <h2 class="custom_heading text-center">
+        Comentarios
+        <span style='color:rgb(255, 183, 67)'>
+          Aportes
+        </span>
+      </h2>
+      <p class="text-center">
+        Sección dedicada a expresar y descubrir opiniones de nuestros expertos
+      </p>
+      <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+          <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="layout_padding2 pl-100">
+              <div class="client_container">
+                
+                  <img class='img-perfil' src="/template/images/client.jpg" alt="">
+              
+                <div class="detail_box">
+                  <h5>
+                    Sandy Mark
+                  </h5>
+                  <p>
+                    La variedad de cursos que ofrecemos es otra ventaja destacada de GlobalDorado. Contamos con cursos en una amplia gama de disciplinas, desde tecnología y negocios hasta arte y música, pasando por idiomas y desarrollo personal. Puedes explorar nuestro catálogo y encontrar el curso que se ajuste a tus intereses y objetivos personales.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="layout_padding2 pl-100">
+              <div class="client_container ">
+                
+                  <img class='img-perfil' src="/img/billies.jpg" alt="">
+                
+                <div class="detail_box">
+                  <h5>
+                    Emma Stone
+                  </h5>
+                  <p>
+                    Nuestro servicio de respuesta en línea a través del chatbot de Telegram es excepcional por varias razones. En primer lugar, nuestro chatbot está diseñado para ser altamente inteligente y comprender las preguntas y consultas de los usuarios de manera precisa. Esto significa que recibirás respuestas relevantes y útiles para tus necesidades.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="layout_padding2 pl-100">
+              <div class="client_container ">
+
+                  <img class='img-perfil' src="/img/yu.jpg" alt="">
+
+                <div class="detail_box">
+                  <h5>
+                    Sansara Smith
+                  </h5>
+                  <p>
+                    Una de las ventajas más destacadas del servicio de streaming es la comodidad que ofrece. Ya no es necesario esperar a que un programa de televisión o una película se transmita en un horario específico. Con el streaming, puedes acceder a tus programas favoritos y películas cuando quieras, pausar, retroceder o avanzar a tu antojo, y disfrutarlos en cualquier dispositivo con conexión a internet.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <!-- end client section -->
+
+  <!-- map section -->
+
+  <section class="map_section">
+    
+
+    <div class="form_container">
+      <div class="row">
+        <div id='sectionContacto'>
+          <form action="">
+            <div class="text-center">
+              <h3>
+                Contactanos
+              </h3>
+            </div>
+            <div>
+              <input type="text" placeholder="Nombre" class="pt-3">
+            </div>
+            <div>
+              <input type=" text" placeholder="Telefono">
+            </div>
+            <div>
+              <input type="email" placeholder="Email">
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Mensaje">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button>
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id='mujerLaptop'>
+       <img src="/img/laptop.png">
+    </div>
+  </section>
+
+
+  <!-- end map section -->
+
+  <!-- info section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_items">
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-1">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                Location
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-2">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                +02 1234567890
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="">
+          <div class="item ">
+            <div class="img-box box-3">
+              <img src="" alt="">
+            </div>
+            <div class="detail-box">
+              <p>
+                demo@gmail.com
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- end info_section -->
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p style='color:rgb(255, 183, 67)'>
+      &copy; 2024 All Rights Reserved By
+      <a style='color:rgb(255, 183, 67)' href="#">GlobalDorado</a>
+    </p>
+  </section>
+  <!-- footer section -->
+ 
+  <script type="text/javascript" src="/template/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/template/js/bootstrap.js"></script>
+  <script type="text/javascript" src='/js/efectWrite.js'></script>
+  <script type="text/javascript" src='/js/carrusel.js'></script>
+  <script type="text/javascript" src='/js/imageInsert.js'></script>
+  <script type="text/javascript" src='/js/insertIframe.js'></script>
+  <!-- end google map js -->
+  </div>
 </body>
+
 </html>

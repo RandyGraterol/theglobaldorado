@@ -4,16 +4,20 @@ const express = require('express');
 const http = require('http');
 const path = require('path');
 const cors = require('cors');
-const port = 5000;
-//carga diferida
-
+const port = 3000;
+//carga diferidanfvhc 
 
 const app = express();
+// Configurar la caché para recursos estáticos
+const staticOptions = {
+  maxAge: 30 * 24 * 60 * 60, // Tiempo de caché en segundos (30 días en este ejemplo)
+};
+//configuracion de archivos static
+app.use(express.static(__dirname+'/public'));
+
 //Instancia del server
 const server = http.createServer(app);
 
-//configuracion de archivos static
-app.use(express.static(__dirname+'/public'));
 
 //configuracion de motor de plantillas
 app.set('view engine','ejs');
@@ -28,12 +32,12 @@ app.use(express.json());
 app.use(cors());
 
 //routers
-const userRouter = require('./router/userRouter.js')
+const userRouter = require('./router/userRouter.js');
+					
+app.use('/',userRouter);
 
-//rutas
-app.get('/',userRouter);
+server.listen(port,()=> {
 
+console.log(`Servidor corriendo en el puerto ${port}`);
 
-server.listen(port,()=>{
-	console.log(`Servidor corriendo en el puerto ${port}`);
 })
