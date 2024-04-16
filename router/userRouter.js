@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Recaptcha = require('express-recaptcha').RecaptchaV2;
-const recaptcha = new Recaptcha('6LdleIUpAAAAAGCrryEdTCYoGMbUCR9Yvr6zFlj7','6LdleIUpAAAAAPy_z7tY5C3stg1izDZNCNU6y0ta');
+const recaptcha = new Recaptcha('6LczhrwpAAAAANAG886OKBEScaVpZih-IMggUr3F','6LczhrwpAAAAACwzgZcg1ci2aqnPR9EX6R7YAhUf');
 
 //controlador
 const controllers = require('../controllers/userControllers.js');
