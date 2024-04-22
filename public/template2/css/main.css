@@ -63,7 +63,7 @@
 	display:flex;
 	justify-content: center;
 	align-items: center;
-    margin:1rem auto;
+    margin-top:1rem;
 }
 .h11{
 	display:flex;
@@ -88,3 +88,7 @@
 	width:500px;
 }
 
+.textoRestablecer p{
+ text-align: center;
+ margin-top:2rem;
+}

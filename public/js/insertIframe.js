@@ -13,3 +13,10 @@ window.addEventListener('load',()=>{
    divIframe.append(iframe);
   
 })
+let anchodisponible = screen.availWidth;
+let alturadisponible = screen.availHeight;
+
+let anchototal = screen.width;
+let alturatotal = screen.height;
+
+console.log(`Ancho : ${anchototal} alto : ${alturatotal}`);

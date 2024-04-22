@@ -31,28 +31,28 @@
                 <h1 class="fst-italic lh-1 h11">Regis<span style='color:rgb(255, 183, 67)'>tro</span></h1>
                 <p class="mb-5"></p>
 
-                <form id="contactForm" id='contactForm'>
+                <form id="contactForm" action="/users" method="POST">
                     <!-- Email address input-->
                     <div class="row input-group-newsletter">
                         
                         <div class="col">
 
-                            <input class="form-control" id="name" type="text" placeholder="Ingresa tu nombre" aria-label="Enter email address..." data-sb-validations="required,email"/>
+                            <input class="form-control" name='nombre' id="name" type="text" placeholder="Ingresa tu nombre" aria-label="Enter email address..." data-sb-validations="required,email"/>
 
                         </div>
 
                         <div class="col">
 
-                            <input class="form-control" id="telefono" type="number" placeholder="Ingresa telefono" aria-label="Enter email address..." data-sb-validations="required,email"/>
+                            <input class="form-control" name="telefono" id="telefono" type="number" placeholder="Ingresa telefono" aria-label="Enter email address..." data-sb-validations="required,email"/>
 
                         </div>
 
                         <div class="col">
-                            <input class="form-control" id="email" type="email" placeholder="Ingresa tu correo" aria-label="Enter email address..." data-sb-validations="required,email" />
+                            <input class="form-control" name='correo' id="email" type="email" placeholder="Ingresa tu correo" aria-label="Enter email address..." data-sb-validations="required,email" />
                         </div>
 
                         <div class="col">
-                            <input class="form-control" id="password" type="password" placeholder="Ingresa la contraseña" aria-label="Enter email address..." data-sb-validations="required,email" />
+                            <input class="form-control" name='contrasena' id="password" type="password" placeholder="Ingresa la contraseña" aria-label="Enter email address..." data-sb-validations="required,email" />
                         </div>
                         
                         <div class="g-recaptcha" data-sitekey="6LdleIUpAAAAAGCrryEdTCYoGMbUCR9Yvr6zFlj7"></div>
