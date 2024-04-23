@@ -7,7 +7,7 @@ exports.userRoutes = void 0;
 const express_1 = require("express");
 const express_recaptcha_1 = require("express-recaptcha");
 const verifyToken_1 = __importDefault(require("../middleware/verifyToken")); // Importar verifyToken
-const recaptcha = new express_recaptcha_1.RecaptchaV2('6LdleIUpAAAAAGCrryEdTCYoGMbUCR9Yvr6zFlj7', '6LdleIUpAAAAAPy_z7tY5C3stg1izDZNCNU6y0ta');
+const recaptcha = new express_recaptcha_1.RecaptchaV2('6Ldo-cMpAAAAAEaq_dXV1AS-zu22DaijIK8jkvWa','6Ldo-cMpAAAAAG_C1BU4Kq-1X0s9Owj41mtnKlWa');
 const userControllers_js_1 = require("../controllers/userControllers.js");
 exports.userRoutes = (0, express_1.Router)();
 //rutas GET
