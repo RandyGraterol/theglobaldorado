@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>delegacion</title>
+	<style type="text/css">
+		.completada{
+			background:green;
+			text-decoration:line-through;
+		}
+	</style>
+</head>
+<body>
+ <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container">
+          
+            <img class='imgLogoP' src="/template/icon/logoGlobal-Photoroom.png" alt="">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img width='30' src='/icon/menu.png'>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#suscripcion">Suscripción</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#entretenimiento">Entretenimiento</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#libros">Libros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/" target="_top">Salir</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+<script type="text/javascript">
+//herencia prototipica basada en funciones
+
+//funcion constructora
+function Animal(tipo){
+this.tipo = tipo;
+}
+
+//agregando metodo al prototipo de la funcion(objeto) Animal
+Animal.prototype.sonido=function(){
+console.log(`El ${this.tipo} esta emitiendo un sonido`);
+}
+
+//funcion constructora Perro
+function Perro(color,tipo){
+Animal.call(this,tipo);
+this.color = color;
+}
+//funcion constructora Gato
+function Gato(age,tipo){
+Animal.call(this,tipo);
+this.age = age;
+}
+
+//definiendo herencia prototipica entre perro y animal
+Perro.prototype = Object.create(Animal.prototype)
+Perro.prototype.constructor = Perro;
+//definiendo herencia prototipica entre gato y animal
+Gato.prototype = Object.create(Animal.prototype);
+Gato.prototype.constructor = Gato;
+
+//agregando metodo al protopype de Perro
+Perro.prototype.caracteristicas=function(){
+	console.log(`El perro es de color : ${this.color}`);
+}
+//agregando metodo al protopype de Gato
+Gato.prototype.verificar= function(){
+console.log(`el ${this.tipo} tiene ${this.age} años de edad`);
+}
+//creando las instancias de ambos objetos 
+let miPerro = new Perro('rojo','Perro');
+let miGato = new Gato(22,'gato');
+//llamando a los metodos requeirdos
+miPerro.sonido();
+miPerro.caracteristicas();
+miGato.sonido();
+miGato.verificar();
+
+</script>
+
+</body>
+</html>

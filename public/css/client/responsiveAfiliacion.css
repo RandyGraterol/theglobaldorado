@@ -1,0 +1,89 @@
+@media (max-width: 767px) {
+	.imagen{
+			width:100vw !important;
+			height:70vw !important;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			
+            
+		}
+		.texto h2{
+			text-align: center;
+			width:90%;
+		}
+		.texto button{
+			width:79% !important;
+		}
+		.comprobante{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+		
+		}
+		.comprobante div{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			gap: 2rem;
+			width:80% !important;
+		
+		}
+
+		.comprobante div picture img{
+			width: 30vh !important;
+			height: auto;
+
+
+		}
+
+		.comprobante div picture{
+			height: auto;
+			width:70% !important;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		
+		}
+		.comprobante div p{
+			
+			width:100% !important;
+
+		
+		}
+		.pieImg{
+			top:15rem !important;
+		}
+		.pagos{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height:auto !important;
+			gap: 5rem !important;
+			padding-bottom: 2rem;	
+		}
+		.pagos .img-{
+			width:50vw !important;
+			height: 50vw !important;
+
+		}
+.transfondo{
+ position:relative;
+ width:100%;
+ height:auto; 
+}
+.transfondo:before{
+ position:absolute;
+ content:"";
+ width:100%;
+ height:100%;
+ top:0;
+ left:0;
+ backdrop-filter: blur(7px);
+ background:rgba(0,0,0,.3);
+}
+}
